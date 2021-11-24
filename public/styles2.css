@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.header {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+
+  background: url("/public/images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 33rem;
+  background-position: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2em;
+}
+.navbar-mobile {
+  display: none;
+}
+.navbar-list {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-list li {
+  margin-right: 3em;
+  color: #fff;
+}
+
+#contact {
+  margin-right: 0;
+}
+
+.center-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-detail h1 {
+  position: relative;
+  top: 8rem;
+  color: #fff;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+
+.center-detail img {
+  position: relative;
+  top: 14rem;
+}
+
+.adverts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.adverts img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.standout,
+.transform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.graphic,
+.photography {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.graphic div,
+.photography div {
+  width: 45%;
+  text-align: center;
+}
+
+/* .graphic h1,
+.photography h1 {
+  text-align: center;
+}
+.graphic p,
+.photography p {
+  text-align: center;
+} */
+
+.graphic {
+  background-image: url("/public/images/desktop/image-graphic-design.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.photography {
+  background-image: url("/public/images/desktop/image-photography.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+}
+.testimonial-text {
+  text-align: center;
+}
+.testimonial-container {
+  display: flex;
+  width: 70%;
+}
+.testimonial-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-container img {
+  border-radius: 50%;
+  width: 3.5rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gallery img {
+  object-fit: cover;
+  width: 100%;
+}
+
+footer {
+  background: hsl(168, 34%, 60%);
+  padding: 4em 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5em;
+  margin-top: 3rem;
+}
+
+.footer-links h3 {
+  margin-right: 4rem;
+  color: hsl(167, 40%, 24%);
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
+#projects {
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links svg {
+  margin-right: 2rem;
+}
+#pininterest {
+  margin-right: 0;
+}
+
+.footer-logo-section {
+  display: flex;
+  justify-content: center;
+}
+
+@media all and (max-width: 760px) {
+  .adverts {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .egg {
+    grid-row: 1/2;
+  }
+  .testimonial-container {
+    flex-direction: column;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .center-detail h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar-mobile {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: block;
+    /* padding-left: inherit;
+    padding-right: inherit; */
+    z-index: 3;
+    /* padding: 0 1rem; */
+    padding-top: 2rem;
+  }
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-list-mobile {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    background: #fff;
+    padding: 2.5rem 0;
+  }
+  .hidden {
+    display: none;
+  }
+  .navbar-list-mobile li {
+    color: hsl(210, 4%, 67%);
+    font-size: 1.1rem;
+    margin-bottom: 2em;
+  }
+  #contact-mobile {
+    margin-bottom: 0;
+    background: hsl(51, 100%, 49%);
+    color: #000000;
+    padding: 1em 2em;
+    border-radius: 1.875rem;
+  }
+  .header-container {
+    position: relative;
+  }
+}
